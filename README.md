@@ -3,7 +3,7 @@
 
 ## 📑 Table of Contents
 - [Optimisation Challenge](#optimisation-challenge)
-- [Solution Logic and Architecture]()
+- [Solution Logic and Architecture](#solution-logic-and-architecture)
 - [Run Locally]()
 - [Run Docker Container]()
 - [Demos]()
@@ -28,7 +28,7 @@ The van load optimisation process assumes the use of the following parcel types:
 > - **Advanced Constraints**: The logic can be extended to include complex logistical constraints, such as optimising for _weight distribution_ (**_centre of gravity_**) or _fragility rules_ (prohibiting the stacking of delicate items).
 
 ## Solution Logic and Architecture
-The app is built using _React_ front-end and provides an interactive 3D visualisation using _Three.js_ library.
+The app is built using _React_ front-end and provides an interactive 3D visualisation using _Three.js_ library. There are tow main building blocks: _Cargo Packing Simulation_ and _AI Optimisation Assistant_.
 
 ### Cargo Packing Simulation
 The packing calculation is managed by the **_packContainer_** service, which accepts user input from the `ControlPanel.tsx` component:
@@ -36,17 +36,14 @@ The packing calculation is managed by the **_packContainer_** service, which acc
 - **Logic**: The heuristic solver calculates the optimal 3D coordinates for each parcel, allowing for full rotation to achieve the highest possible packing density.
 - **Visualisation**: The result is displayed in a rotatable 3D model, where each parcel is clearly colour-coded by type (_Small/Green_, _Medium/Blue_, _Large/Red_).
 
-### 2. AI Optimisation Assistant
+### AI Optimisation Assistant
 AI-based feedback and suggestions can be generated, leveraging the _Gemini API_:
 - The `getOptimizationInsights` service is triggered after the simulation. It passes the raw packing data (placed and unplaced items, utilisation) to the **_Gemini_** model.
 - **_Gemini_** analyses the loading statistics and returns actionable recommendations (e.g., "_Consider reducing the number of Large parcels by 2, as they are causing significant gaps_")
 - The _Gemini API Key_ is loaded from the `.env.local` file and injected via `vite.config.ts`.
 
 ## Run Locally
-The application uses Node.js and Vite for the development environment.
-
-> [!WARNING]
-> Prerequisites: **Node.js**
+The application uses Node.js and Vite for the development environment. Please, follow these 3 steps to launch the CLOA app locally.
 
 1. Install dependencies:
 
@@ -63,10 +60,10 @@ npm run dev
 ```
 
 > [!NOTE]
-> The programme will typically be accessible in your web browser at http://localhost:3000.
+> The app's UI will be accessible at http://localhost:3000.
 
 ## Run Docker Container
-For a consistent and portable environment, the repo offers a pre-packaged Docker container companion. You can run it with the following Docker CLI command:
+For a consistent and portable environment, the repo comes with a pre-packaged Docker image companion. You can run it with the following Docker CLI command:
 
 ``` Bash
 docker run -d -p 3000:3000 --env GEMINI_API_KEY="YOUR_API_KEY" cloa-app
@@ -77,7 +74,7 @@ docker run -d -p 3000:3000 --env GEMINI_API_KEY="YOUR_API_KEY" cloa-app
 > The --env flag is mandatory to pass the required GEMINI_API_KEY environment variable into the running container.
 
 ## Demos
-To see the CLOA application in action:
+To see the CLOA app in action:
 
 - Published Programme Link: [Insert Link Here]
 - Video Demonstration: [Insert YouTube Link Here]
