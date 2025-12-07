@@ -45,7 +45,7 @@ AI-based feedback and suggestions can be generated, leveraging the _Gemini API_:
 ## Run Locally
 The application uses Node.js and Vite for the development environment.
 
-> [!ATTENTION]
+> [!WARNING]
 > Prerequisites: **Node.js**
 
 1. Install dependencies:
