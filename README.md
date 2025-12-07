@@ -4,31 +4,31 @@
 ## 📑 Table of Contents
 - [Optimisation Challenge](#optimisation-challenge)
 - [Solution Logic and Architecture](#solution-logic-and-architecture)
-- [Run Locally]()
+- [Run the App Locally]()
 - [Run Docker Container]()
-- [Demos]()
+- [Demos](#demos)
 
 ## Optimisation Challenge
-This app is designed to assist with the load optimisation challenge, which requires efficient arrangement of a given set of defined items within larger container. It's currently tuned for a standard delivery vehicle:
+This app is designed to assist with the load optimisation challenge, which requires efficient arrangement of a given set of defined items within a larger container. It's currently tuned for a standard delivery vehicle:
 - **Container Dimensions** (L x W x H): _3.0_ m x _1.8_ m x _1.9_ m.
-- **Total Volume**: _10.26_ m^3.
+- **Total Volume**: _10.26_ m³.
 
 The van load optimisation process assumes the use of the following parcel types:
 
-| Type   | Dimensions (L x W x H) | Volume    | Colour Code |
-| ------ | ---------------------- | --------- | ----------- |
-| Small  | 0.30m x 0.20m x 0.15m  | 0.009 m^3 | Green       |
-| Medium | 0.50m x 0.40m x 0.30m  | 0.060 m^3 | Blue        |
-| Large  | 0.75m x 0.50m x 0.60m  | 0.225 m^3 | Red         |
+| Type   | Dimensions (L x W x H) | Volume   | Colour Code |
+| ------ | ---------------------- | -------- | ----------- |
+| Small  | 0.30m x 0.20m x 0.15m  | 0.009 m³ | Green       |
+| Medium | 0.50m x 0.40m x 0.30m  | 0.060 m³ | Blue        |
+| Large  | 0.75m x 0.50m x 0.60m  | 0.225 m³ | Red         |
 
 > [!NOTE]
-> The underlying parcel-packing logic can be extended to address complex logistics and manufacturing challenges outside of cargo van loading:
+> The underlying parcel-packing logic can be extended to address complex logistics and manufacturing challenges outside of cargo-van loading:
 > - **Diverse Container Types**: The app can be adapted to optimise loading for various transport vessels, such as _shipping containers_, _rail wagons_ or _aircraft cargo_, by updating the **_CONTAINER_** dimensions defined within `types.ts`.
 > - **Internal Product Packaging**: The packing principles apply at a micro-level. For instance, the same solution logic could be used to optimise the _arrangement of internal components_ (e.g., circuit boards, batteries) within a final product's casing, helping to minimise the product's size or reduce wasted space.
 > - **Advanced Constraints**: The logic can be extended to include complex logistical constraints, such as optimising for _weight distribution_ (**_centre of gravity_**) or _fragility rules_ (prohibiting the stacking of delicate items).
 
 ## Solution Logic and Architecture
-The app is built using _React_ front-end and provides an interactive 3D visualisation using _Three.js_ library. There are tow main building blocks: _Cargo Packing Simulation_ and _AI Optimisation Assistant_.
+The app is built using _React_ front-end and provides an interactive 3D visualisation using _Three.js_ library. There are two main building blocks: _Cargo Packing Simulation_ and _AI Optimisation Assistant_.
 
 ### Cargo Packing Simulation
 The packing calculation is managed by the **_packContainer_** service, which accepts user input from the `ControlPanel.tsx` component:
@@ -42,7 +42,7 @@ AI-based feedback and suggestions can be generated, leveraging the _Gemini API_:
 - **_Gemini_** analyses the loading statistics and returns actionable recommendations (e.g., "_Consider reducing the number of Large parcels by 2, as they are causing significant gaps_")
 - The _Gemini API Key_ is loaded from the `.env.local` file and injected via `vite.config.ts`.
 
-## Run Locally
+## Run the App Locally
 The application uses Node.js and Vite for the development environment. Please, follow these 3 steps to launch the CLOA app locally.
 
 1. Install dependencies:
