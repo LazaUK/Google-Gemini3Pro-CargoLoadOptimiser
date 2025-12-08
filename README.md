@@ -2,7 +2,7 @@
 **CLOA** (_Container Load Optimisation App_) is a 3D visualisation tool, designed to maximise the efficiency of cargo van loading. It simulates the placement of various standard parcel types into a fixed-size cargo van, generates real-time utilisation statistics and uses the _Gemini API_ to provide AI optimisation insights.
 
 > [!TIP]
-> This app was built as a part of "vibe coding" with Google's Gemini 3 Pro model.
+> This app was built as a part of [Google DeepMind - Vibe Code with Gemini 3 Pro in AI Studio](https://www.kaggle.com/competitions/gemini-3) competition on Kaggle.
 
 ## 📑 Table of Contents
 - [Optimisation Challenge](#optimisation-challenge)
