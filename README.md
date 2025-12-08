@@ -7,7 +7,7 @@
 ## 📑 Table of Contents
 - [Optimisation Challenge](#optimisation-challenge)
 - [Solution Logic and Architecture](#solution-logic-and-architecture)
-- [Run the CLOA App Locally]()
+- [Run the CLOA App Locally](#run-the-cloa-app-locally)
 - [Run Docker Container](#run-docker-container)
 - [Demos](#demos)
 
