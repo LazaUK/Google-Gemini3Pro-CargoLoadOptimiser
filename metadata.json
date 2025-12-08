@@ -1,0 +1,5 @@
+{
+  "name": "CLOA - Container Load Optimization",
+  "description": "A 3D Bin Packing visualization tool for optimizing cargo van loading efficiency with AI insights.",
+  "requestFramePermissions": []
+}
