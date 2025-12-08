@@ -46,7 +46,7 @@ AI-based feedback and suggestions can be generated, leveraging the _Gemini API_:
 - The _Gemini API Key_ is loaded from the `.env.local` file and injected via `vite.config.ts`.
 
 ## Run the App Locally
-The application uses Node.js and Vite for the development environment. Please, follow these 3 steps to launch the CLOA app locally.
+The application is based on the Node.js framework. Please, follow these 3 steps to launch the CLOA app locally.
 
 1. Install dependencies:
 
