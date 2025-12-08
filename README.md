@@ -7,8 +7,8 @@
 ## 📑 Table of Contents
 - [Optimisation Challenge](#optimisation-challenge)
 - [Solution Logic and Architecture](#solution-logic-and-architecture)
-- [Run the App Locally]()
-- [Run Docker Container]()
+- [Run the CLOA App Locally]()
+- [Run Docker Container](#run-docker-container)
 - [Demos](#demos)
 
 ## Optimisation Challenge
@@ -45,7 +45,7 @@ AI-based feedback and suggestions can be generated, leveraging the _Gemini API_:
 - **_Gemini_** analyses the loading statistics and returns actionable recommendations (e.g., "_Consider reducing the number of Large parcels by 2, as they are causing significant gaps_")
 - The _Gemini API Key_ is loaded from the `.env.local` file and injected via `vite.config.ts`.
 
-## Run the App Locally
+## Run the CLOA App Locally
 The app requires Node.js runtime environment for its setup and execution. Please, follow these 3 steps to launch the CLOA app locally.
 
 1. Install dependencies:
