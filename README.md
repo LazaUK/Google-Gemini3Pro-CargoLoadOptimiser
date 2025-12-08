@@ -1,7 +1,7 @@
 # Van Load Optimisation by CLOA, powered by Gemini 3 Pro
 **CLOA** (_Container Load Optimisation App_) is a 3D visualisation tool, designed to maximise the efficiency of cargo van loading. It simulates the placement of various standard parcel types into a fixed-size cargo van, generates real-time utilisation statistics and uses the _Gemini API_ to provide AI optimisation insights.
 
-> [!INFORMATION]
+> [!TIP]
 > This app was built as a part of "vibe coding" with Google's Gemini 3 Pro model.
 
 ## 📑 Table of Contents
@@ -62,7 +62,7 @@ npm install
 npm run dev
 ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The app's UI will be accessible at http://localhost:3000.
 
 ## Run Docker Container
@@ -72,7 +72,7 @@ For a consistent and portable environment, the repo comes with a pre-packaged Do
 docker run -d -p 3000:3000 --env GEMINI_API_KEY="YOUR_API_KEY" cloa-app
 ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The programme will be accessible in your browser at http://localhost:3000.
 > The --env flag is mandatory to pass the required GEMINI_API_KEY environment variable into the running container.
 
