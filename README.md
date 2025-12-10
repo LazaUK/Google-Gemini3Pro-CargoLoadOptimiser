@@ -69,7 +69,7 @@ npm run dev
 For a consistent and portable environment, the repo comes with a pre-packaged Docker image companion. You can run it with the following Docker CLI command:
 
 ``` Bash
-docker run -d -p 3000:3000 --env GEMINI_API_KEY="YOUR_API_KEY" cloa-app
+docker run -d -p 3000:80 --env GEMINI_API_KEY="YOUR_API_KEY" ghcr.io/lazauk/cloa-app:latest
 ```
 
 > [!IMPORTANT]
