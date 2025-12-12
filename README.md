@@ -80,4 +80,4 @@ docker run -d -p 3000:80 --env GEMINI_API_KEY="YOUR_API_KEY" ghcr.io/lazauk/cloa
 To see the CLOA app in action:
 
 - Published Programme Link: [Insert Link Here]
-- Video Demonstration: [Insert YouTube Link Here]
+- Video Demonstration: [YouTube Link](https://youtu.be/xMhhdpk6J4o)
