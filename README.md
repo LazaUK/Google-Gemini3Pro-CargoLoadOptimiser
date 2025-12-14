@@ -79,5 +79,5 @@ docker run -d -p 3000:80 --env GEMINI_API_KEY="YOUR_API_KEY" ghcr.io/lazauk/cloa
 ## Demos
 To see the CLOA app in action:
 
-- Published Programme Link: [Google AI Studio app](https://ai.studio/apps/drive/1yYWWw8AhqmWtzL6XOHu16sLClF5fUNU0?fullscreenApplet=true)
+- Published App Link: [Google AI Studio app](https://ai.studio/apps/drive/1yYWWw8AhqmWtzL6XOHu16sLClF5fUNU0?fullscreenApplet=true)
 - Video Demonstration: [YouTube Link](https://youtu.be/xMhhdpk6J4o)
